@@ -21,19 +21,19 @@
 
 1. Initialize App Engine.(Initialize your App Engine app with your project and choose its region)
 
-       `gcloud app create --project=$DEVSHELL_PROJECT_ID`
+    `gcloud app create --project=$DEVSHELL_PROJECT_ID`
 
 
 - When prompted, select the region where you want your App Engine application located.
 
 2. Clone the source code repository for a sample application in the hello_world directory
 	
-	   `git clone https://github.com/GoogleCloudPlatform/python-docs-samples` 
+	`git clone https://github.com/GoogleCloudPlatform/python-docs-samples` 
 
 
 3. Navigate to the source directory
 
-	   `cd python-docs-samples/appengine/standard_python3/hello_world`
+	`cd python-docs-samples/appengine/standard_python3/hello_world`
 
 ---
 ## STEPS FOR PREVIEWING AN APP ENGINE APPLICATION RUNNING LOCALLY IN CLOUD SHELL
@@ -41,32 +41,32 @@
 
 1. Run Hello World application locally
 
-	    `sudo apt-get update`
+	`sudo apt-get update`
 
 
 2. Set up a virtual environment in which you will run your application. Python virtual environments are used to isolate package installations from the system
 
-	      `sudo apt-get install virtualenv`
+	`sudo apt-get install virtualenv`
 
 
 * If prompted [Y/n], press Y and then Enter.
 
-	   `virtualenv -p python3 venv`
+	`virtualenv -p python3 venv`
 
 
 3. Activate the virtual environment.
 
-	    `source venv/bin/activate`
+	`source venv/bin/activate`
 
 
 4. Navigate to your project directory and install dependencies.
 
-	     `pip install  -r requirements.txt`
+	`pip install  -r requirements.txt`
 
 
 5. Run the application:
 
-	    `python main.py`
+	`python main.py`
 6. In Cloud Shell, click Web preview (Web Preview) > Preview on port 8080 to preview the application
 
 
@@ -82,18 +82,18 @@
 
 1. Navigate to the source directory:
 	
-	    `cd ~/python-docs-samples/appengine/standard_python3/hello_world`
+	`cd ~/python-docs-samples/appengine/standard_python3/hello_world`
 
 2. Deploy your Hello World application.
 
-	   `gcloud app deploy`
+	`gcloud app deploy`
 
 * If prompted "Do you want to continue (Y/n)?", press Y and then Enter.(This app deploy command uses the app.yaml file to identify project configuration)
 
 3. Launch your browser to view the app at http://YOUR_PROJECT_ID.appspot.com
 
-	   `gcloud app browse`
-	   
+	`gcloud app browse`
+
 * Congratulations! You created your first application using App Engine.
 
 #  Click Check my progress to verify the objective.
